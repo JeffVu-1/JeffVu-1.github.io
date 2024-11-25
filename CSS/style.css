@@ -127,7 +127,7 @@ h1 {
     }
 }
 
-.homepage img{
+.homePageImage{
     background-image: url("../Image/Forest.png");
     background-size: cover;
     background-position: 50% 60%;
@@ -464,10 +464,6 @@ footer{
 }
 
 @media(max-width: 768px){
-  .homepageimage{
-    display: none;
-  }
-
   h3{
     margin: 0;
   }
