@@ -171,11 +171,11 @@
             });
         });
 
-
         let navbar = document.querySelector('nav');
         let oldScroll = window.scrollY;
-
+        let threshold = 100;
         window.onscroll = function() {
+        if (Math.abs(oldScroll - window.scrollY) > threshold) {
             if (oldScroll < window.scrollY) {
                 navbar.classList.remove('fade-in');
                 navbar.classList.add('fade-out');
@@ -184,6 +184,7 @@
                 navbar.classList.add('fade-in');
             }
             oldScroll = window.scrollY;
+        }
         }
     </script>
     
