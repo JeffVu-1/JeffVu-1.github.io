@@ -403,29 +403,34 @@ blockquote p{
 
 /* ------------------- contact section start ------------------- */
 
-.contactpage{
-    height: 400px;
-    padding: 0px 40px 40px 40px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+.contactpage {
+  height: 400px;
+  padding: 0px 40px 40px 40px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
 
-    ul{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.contactpage ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 
-    li{
-        margin: 10px;
-    }
+.contactpage li {
+  margin: 10px;
+}
 
-    a{
-        text-decoration: none;
-        color: #000000;
-        font-size: 2rem;
-    }
+.contactpage a {
+  text-decoration: none;
+  color: #000000;
+}
 
+.contactpage a i {
+  font-size: 2rem;
+  vertical-align: middle; 
 }
 /* ------------------- contact section end ------------------- */
 
