@@ -84,7 +84,7 @@
                     <div class="card__data"> 
                         <span class="card__description">This is Project 1</span>
                         <h2 class="card__title">Valorant A.I Aimbot</h2>
-                        <a href="#" class="card__button"><img src="SVG/Link.svg"> Github Project</a>
+                        <a href="https://github.com/JeffVu-1/Valorant-A.I-Aimbot" target="_blank" class="card__button"><img src="SVG/Link.svg"> Github Project</a>
                         <br>
                         <span class="card__description" style="color:rgb(255, 187, 0)">#Python</span>
                         <span class="card__description" style="color:#ff831e">#DeepLearning</span>
@@ -99,7 +99,7 @@
                     <div class="card__data"> 
                         <span class="card__description">This is Project 2</span>
                         <h2 class="card__title">AssaultCube Internal Cheats</h2>
-                        <a href="#" class="card__button"><img src="SVG/Link.svg"> Github Project</a>
+                        <a href="https://github.com/JeffVu-1/AssaultCube-Internal-Cheats" target="_blank" class="card__button"><img src="SVG/Link.svg"> Github Project</a>
                         <br>
                         <span class="card__description" style="color:#1E3A8A">#C++</span> 
                         <span class="card__description" style="color:#a200ffd8">#IDA PRO</span> 
@@ -114,7 +114,7 @@
                     <div class="card__data"> 
                         <span class="card__description">This is Project 3</span>
                         <h2 class="card__title">European Table Roulette</h2>
-                        <a href="#" class="card__button"><img src="SVG/Link.svg"> Github Project</a>
+                        <a href="https://github.com/JeffVu-1/RouletteGameWithGui" target="_blank" class="card__button"><img src="SVG/Link.svg"> Github Project</a>
                         <br>
                         <span class="card__description" style="color:#1E3A8A">#C++</span> 
                         <span class="card__description" style="color:#8E44AD">#ImGui</span> 
@@ -141,6 +141,10 @@
     <footer>&copy; 2024 Jeff Vu. All rights reserved.</footer>
 
     <script>
+
+
+
+
         window.addEventListener('scroll', function() {
             let badges = document.querySelectorAll('.badges img'); 
             let photos = document.querySelectorAll('.photos');
@@ -166,6 +170,21 @@
                 this.classList.add('activeNav');
             });
         });
+
+
+        let navbar = document.querySelector('nav');
+        let oldScroll = window.scrollY;
+
+        window.onscroll = function() {
+            if (oldScroll < window.scrollY) {
+                navbar.classList.remove('fade-in');
+                navbar.classList.add('fade-out');
+            } else {
+                navbar.classList.remove('fade-out');
+                navbar.classList.add('fade-in');
+            }
+            oldScroll = window.scrollY;
+        }
     </script>
     
 </body>

@@ -52,7 +52,39 @@ nav{
     box-shadow: 2px 2px 2px 2px #00000042;
     border-radius: 40px;
     z-index: 100;
+    transition: opacity 0.3s ease;
 }
+
+.fade-in {
+  animation: NavfadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: NavfadeOut 0.5s forwards;
+}
+
+@keyframes NavfadeIn {
+  0% {
+      opacity: 0;
+      pointer-events: none;
+  }
+  100% {
+      opacity: 1;
+      pointer-events: all;
+  }
+}
+
+@keyframes NavfadeOut {
+  0% {
+      opacity: 1;
+      pointer-events: all;
+  }
+  100% {
+      opacity: 0;
+      pointer-events: none;
+  }
+}
+
 
 nav ul{
     display: flex;
@@ -444,8 +476,6 @@ footer{
   font-family: 'Arial', sans-serif;
 }
 /* ------------------- contact section end ------------------- */
-
-
 
 @media(max-width: 1440px){
   #MuayThai{
